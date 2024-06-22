@@ -1,4 +1,4 @@
-# Twitter User Scorer
+# Cyber Harm Profiler
 
 This project aims to identify potentially harmful Twitter users by scraping Reddit for Twitter handles mentioned in controversial subreddits, collecting data from the Twitter API, and calculating a score based on various metrics to rate the harmfulness of each user.
 
