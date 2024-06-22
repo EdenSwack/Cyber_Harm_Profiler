@@ -18,7 +18,7 @@ This project aims to identify potentially harmful Twitter users by scraping Redd
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/twitter-user-report.git
+   git clone https://github.com/EdenSwacm/twitter-user-report.git
    ```
 
 2. Install the required dependencies:
@@ -44,14 +44,20 @@ twitter-user-report/
 ├── data/
 │   ├── raw_user_data.json
 │   └── top_10_raw_user_data.json
-├── twitter_user_report.py
+├── twitter_scraper.py
+├── reddit_scraper.py
+├── scoring.py
+├── main.py
 ├── README.md
 └── requirements.txt
 ```
 
 - `config.py`: Contains the API credentials for Reddit and Twitter.
 - `data/`: Directory to store the raw user data and the top 10 user data.
-- `twitter_user_report.py`: The main script that scrapes Reddit, collects Twitter data, and calculates user scores.
+- `twitter_scraper.py`: api calls to twitter and custom functions to handel and use the needed output from the api calls
+- `reddit_scraper.py`: functions using praw to save data and relevant content from reddit
+- `scoring.py`: custom scoring functions used to calculate metrics such as ingagement of inlfuence
+- `main.py`: the main script which as a result create a list of the top 10 most potentially harmful twitter users
 - `README.md`: This documentation file.
 - `requirements.txt`: List of required Python packages.
 
